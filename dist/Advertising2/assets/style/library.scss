@@ -1,0 +1,20 @@
+@mixin flex(){
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+}
+@mixin infoBox(){
+
+}
+@mixin topText(){
+    color: rgb(57, 132, 255);
+    font-size: 1vw;
+}
+@mixin titleH1(){
+    color: $textBlue;
+    font-size: 3vw;
+}
+$blue:#0157E9;
+$orange:#FFB400;
+$DarkOrange:#FF7F00;
+$textBlue:rgb(22, 32, 130);
