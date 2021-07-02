@@ -1,0 +1,116 @@
+@import "./src/assets/style/library.scss";
+@import "./src/assets/style/animation.scss";
+
+.header{
+    @include flex();
+    width: 100%;
+    height: 8vh;
+    color:white;
+    background-color:$blue;
+    h1{
+        font-size:2.5vw;
+        font-family: bold;
+    }
+    .menu{
+        @include flex();
+        width: 40%;
+        font-family: "Open Sans", Sans-serif;
+        p{cursor: pointer;}
+    }
+    button{
+        width: 6%;
+        height: 5vh;
+        color:white;
+        font-size:12px;
+        transition: 0.3s;
+        border-radius: 6px;
+        background-color: #3F86FF;
+        font-family: "Open Sans", Sans-serif;
+    }
+    button:hover{
+        transition: 0.3s;
+        background-color: $DarkOrange;
+    }
+}
+.active{
+    color:$orange;
+}
+.getIn{
+    @include flex();
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    background-color: #D4E5FB;
+    position: relative;
+    text-align: center;
+    img{
+        width: 25%;
+        height: 40vh;
+        position: absolute;
+        left:40%;
+        top:10vh;
+        opacity: 0.4;
+        z-index: 0;
+    }
+    h1{
+        @include titleH1();
+        z-index: 1;
+        font-size:4vw;
+    }
+    button{
+        width: 15%;
+        height: 8vh;
+        background-color: #FF7F00;
+        z-index: 1;
+        border-radius: 5px;
+        color: white;
+        font-size:1.6vw;
+        transition: 0.3s;
+    }
+    button:hover{
+        background-color: $orange;
+    }
+}
+.footer{
+    width: 100%;
+    height: 80vh;
+    color: white;
+    background-color: $textBlue;
+    .content{
+        width: 70%;
+        margin-left: 15%;   
+        .topSide{
+            width: 100%;
+            height: 60vh;
+            border-bottom: 1px solid white;
+            .box{
+                width: 20%;
+                height: 50vh;
+                float: left;
+                color: white;
+                margin:10vh 3% 0 0;
+                i{
+                    font-size: 1.5vw;
+                    margin-top:2vh;
+                }
+                i:hover{
+                    color: $orange;
+                }
+            }
+            .social{
+                display: flex;
+                justify-content: space-around;
+                width: 15%;
+                float: right;
+                margin-right: 0;
+            }
+        }
+        .bottomSide{
+            p{
+                font-size:1vw;
+                color:rgba(255, 255, 255, 0.64);
+            }
+        }
+    }
+}
